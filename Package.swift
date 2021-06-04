@@ -13,8 +13,8 @@ let package = Package(name: "ContextMenuSwift",
                           name: "ContextMenuSwift",
                           path: "ContextMenuSwift",
                           resources: [
-                            .process("."),
-                          ],
+                            .process(".")
+                          ]
                         )
                       ],
                       swiftLanguageVersions: [.v5])
