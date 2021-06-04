@@ -8,6 +8,13 @@ let package = Package(name: "ContextMenuSwift",
                                   .watchOS(.v2)],
                       products: [.library(name: "ContextMenuSwift",
                                           targets: ["ContextMenuSwift"])],
-                      targets: [.target(name: "ContextMenuSwift",
-                                        path: "ContextMenuSwift")],
+                      targets: [
+                        .target(
+                          name: "ContextMenuSwift",
+                          path: "ContextMenuSwift",
+                          resources: [
+                            .process("."),
+                          ],
+                        )
+                      ],
                       swiftLanguageVersions: [.v5])
