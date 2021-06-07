@@ -6,8 +6,7 @@ let package = Package(name: "ContextMenuSwift",
                                   .iOS(.v10),
                                   .tvOS(.v9),
                                   .watchOS(.v2)],
-                      products: [.library(name: "ContextMenuSwift",
-                                          targets: ["ContextMenuSwift"])],
+                      products: [.library(name: "ContextMenuSwift", targets: ["ContextMenuSwift"])],
                       targets: [
                         .target(
                           name: "ContextMenuSwift",
@@ -15,7 +14,12 @@ let package = Package(name: "ContextMenuSwift",
                           resources: [
                             .process("ContextMenuCell.xib")
                           ],
-                          exclude: ["Info.plist"]
+                          exclude: [
+                            "ContextMenuSwift/Info.plist",
+                            "ContextMenuSwift.xcodeproj",
+                            "ContextMenuSwiftDemo",
+                            "Images"
+                          ]
                         )
                       ],
                       swiftLanguageVersions: [.v5])
