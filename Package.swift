@@ -14,7 +14,8 @@ let package = Package(name: "ContextMenuSwift",
                           path: "ContextMenuSwift",
                           resources: [
                             .process("ContextMenuCell.xib")
-                          ]
+                          ],
+                          exclude: ["Info.plist"]
                         )
                       ],
                       swiftLanguageVersions: [.v5])
