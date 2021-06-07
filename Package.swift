@@ -11,14 +11,13 @@ let package = Package(name: "ContextMenuSwift",
                         .target(
                           name: "ContextMenuSwift",
                           path: "ContextMenuSwift",
-                          resources: [
-                            .process("ContextMenuCell.xib")
-                          ],
                           exclude: [
                             "ContextMenuSwift/Info.plist",
-                            "ContextMenuSwift.xcodeproj",
                             "ContextMenuSwiftDemo",
                             "Images"
+                          ],
+                          resources: [
+                            .process("ContextMenuCell.xib")
                           ]
                         )
                       ],
